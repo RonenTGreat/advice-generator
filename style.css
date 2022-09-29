@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 
 /* CSS reset */
 
@@ -59,11 +59,72 @@ h6 {
   color: hsl(228, 45%, 44%);
 }
 
-:root{
-  --light-cyan:hsl(193, 38%, 86%);
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
   --neon-green: hsl(150, 100%, 66%);
   --grayish-blue: hsl(217, 19%, 38%);
   --dark-grayish-blue: hsl(217, 19%, 24%);
   --dark-blue: hsl(218, 23%, 16%);
-  --manrope:  'Manrope', sans-serif;
+  --manrope: "Manrope", sans-serif;
+}
+
+body{
+  font-family: var(--manrope);
+  background-color: var(--dark-blue);
+  color: var(--light-cyan);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8rem 1rem;
+}
+
+.container .card{
+  width: 100%;
+  position: relative;
+  background-color: var(--dark-grayish-blue);
+  padding: 0 5rem 3rem 5rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 1rem;
+}
+
+.container .card h1{
+  color: var(--neon-green);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.container .card p{
+  font-size: 2rem;
+}
+
+.container .card .divider{
+  width: 100%;
+  height: 2rem;
+  background-image: url("images/pattern-divider-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 2rem 0;
+}
+
+.container .btn{
+  cursor: pointer;
+  position: absolute;
+  bottom: -2.5rem;
+  left: 26.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--neon-green);
+  padding: 1.8rem;
+}
+
+.btn:hover{
+  box-shadow: -1px 0px 75px 9px var(--neon-green);
+-webkit-box-shadow: -1px 0px 75px 9px var(--neon-green);
+-moz-box-shadow: -1px 0px 75px 9px var(--neon-green);
 }
