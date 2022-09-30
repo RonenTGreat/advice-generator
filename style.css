@@ -78,17 +78,17 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 60rem;
+  max-width: 35rem;
   width: 100%;
   margin: 0 auto;
-  padding: 8rem 1rem;
+  padding: 4rem 1rem;
 }
 
 .container .card{
   width: 100%;
   position: relative;
   background-color: var(--dark-grayish-blue);
-  padding: 0 5rem 3rem 5rem;
+  padding: 0 2rem 3rem 2rem;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   border-radius: 1rem;
 }
@@ -116,7 +116,7 @@ body{
   cursor: pointer;
   position: absolute;
   bottom: -2.5rem;
-  left: 26.5rem;
+  left: calc(50% + -2.7rem);
   border: none;
   border-radius: 50%;
   background-color: var(--neon-green);
@@ -124,7 +124,8 @@ body{
 }
 
 .btn:hover{
-  box-shadow: -1px 0px 75px 9px var(--neon-green);
--webkit-box-shadow: -1px 0px 75px 9px var(--neon-green);
--moz-box-shadow: -1px 0px 75px 9px var(--neon-green);
+  box-shadow: -1px 0px 75px 6px var(--neon-green);
+-webkit-box-shadow: -1px 0px 75px 6px var(--neon-green);
+-moz-box-shadow: -1px 0px 75px 6px var(--neon-green);
 }
+
