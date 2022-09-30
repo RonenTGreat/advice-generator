@@ -101,6 +101,7 @@ body{
 
 .container .card p{
   font-size: 2rem;
+  text-align: center;
 }
 
 .container .card .divider{
